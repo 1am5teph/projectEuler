@@ -22,9 +22,12 @@ for multiple in multiple_set:
         # without a remainder, it appends to
         # multiple list
         if i % m == 0:
-            multiples.append(i)
+            # Checks if multiple is in list
+            if i not in multiples:
+                multiples.append(i)
         else:
             continue
 
 # sums multiple list
+print(multiples)
 print(sum(multiples))

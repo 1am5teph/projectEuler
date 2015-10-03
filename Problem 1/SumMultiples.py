@@ -10,39 +10,21 @@ multiples = []
 
 # User chooses big number
 big_number = input("Enter big number:")
+# User chooses multiples
 multiple_set = input("Enter multiples:")
 
+# loops through each multiple
 for multiple in multiple_set:
     m = int(multiple)
+    # Loops through the big number
     for i in range(big_number):
+        # If number is divisible by multiple
+        # without a remainder, it appends to
+        # multiple list
         if i % m == 0:
             multiples.append(i)
         else:
             continue
-    # if i % 3 == 0:
-    #     multiples.append(i)
-    # elif i % 5 == 0:
-    #     multiples.append(i)
-    # else:
-    #     continue
-print(multiples)
-    # while new_multiple < big_number:
-    #     new_multiple = new_multiple + new_multiple
-    #     multiples.append(new_multiple)
 
-# User chooses multiples
-# find_multiple = [input("Enter multiples:")
-
-# User chooses maximum number
-# for i in range((input("Pick a number, any number:")+1)):
-#     # creates list of multiples
-#     if i % 3 == 0:
-#         continue
-#     elif i % 5 ==0:
-#         multiples.append(i)
-#     else:
-#         continue
-
-# sum multiples list
-multiple_total = sum(multiples)
-print(multiple_total)
+# sums multiple list
+print(sum(multiples))
